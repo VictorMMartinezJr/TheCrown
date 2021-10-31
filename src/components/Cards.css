@@ -1,0 +1,130 @@
+.cards {
+    height: 90vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+    margin: 2rem 2rem;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+
+}
+
+.card p {
+    font-size: 1rem;
+    padding: 0 .5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.card button {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: red;
+    box-shadow: 0 0px 10px red;
+    transition: transform .2s ease-in-out;
+}
+
+.card button:hover, .card button:active {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card1 {
+    background: url('../images/Pour.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5); /* Tint color */
+    background-blend-mode: multiply;
+}
+
+.card2 {
+    background: url('../images/chef.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5); /* Tint color */
+    background-blend-mode: multiply;
+}
+
+.card3 {
+    background: url('../images/delivery.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5); /* Tint color */
+    background-blend-mode: multiply;
+}
+
+@media screen and (max-width: 1415px) {
+    .card h1 {
+        font-size: 2rem;
+    }
+
+    .card button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .card p {
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        height: 150vh;
+    }
+
+    .card {
+        height: 40%;
+        width: 90%;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .card button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .card {
+        margin: .1rem 0;
+    }
+
+    .card p {
+        font-size: .9rem;
+    }
+
+    .card button {
+        font-size: .5rem;
+    }
+}

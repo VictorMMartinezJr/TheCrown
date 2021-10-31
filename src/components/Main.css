@@ -1,0 +1,78 @@
+.main-container {
+    height: 100vh;
+    background: url('../images/restaurant.jpg');
+    background-position: top;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7); /* Tint color */
+    background-blend-mode: multiply;
+}
+
+.main-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    text-align: center;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.main-subtitle {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.main-btn {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: red;
+    box-shadow: 0 0px 10px red;
+    transition: transform .2s ease-in-out;
+}
+
+.main-btn:hover, .main-btn:active {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 2.7rem;
+    }
+
+    .main-subtitle {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .main-btn {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-title {
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 280px) {
+    .main-subtitle {
+        font-size: 1rem;
+    }
+}

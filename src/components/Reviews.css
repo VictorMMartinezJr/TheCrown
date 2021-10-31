@@ -1,0 +1,144 @@
+.review-container {
+    height: 100vh;
+    background: #423F3E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+.review-container h1 {
+    margin-top: 4rem;
+    font-size: 5rem;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+    margin: 2rem 2rem;
+    text-align: center;
+    background: url('../images/review.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7); /* Tint color */
+    background-blend-mode: multiply;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0px 30px black;
+}
+
+.review i {
+    position: absolute;
+    top: 5%;
+    font-size: 4rem;
+}
+
+.review p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 0 1rem;
+}
+
+.review-name {
+    position: absolute;
+    bottom: 10%;
+}
+
+.review-name h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.review-name h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1636px) {
+    .review p {
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .review-name {
+        bottom: 5%;
+    }
+
+    .review-container h1 {
+        font-size: 3rem;
+    }
+
+    .review {
+        margin: .5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .review i {
+        top: 10%;
+        font-size: 3rem;
+    }
+
+    .review p {
+        font-size: 1.8rem;
+    }
+
+    .review-name h2 {
+        font-size: 2rem;
+    }
+
+    .review-name h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .review-container {
+        height: 200vh;
+
+    }
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review {
+        width: 95%;
+        align-items: center;
+        margin: .5rem;
+    }
+
+    .review-container h1 {
+        margin-top: 0;
+    }
+
+    .review p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .review p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .review p {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+}

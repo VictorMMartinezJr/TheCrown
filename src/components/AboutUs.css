@@ -1,0 +1,126 @@
+.aboutus-container {
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.about-aos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutus-info {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    
+}
+
+.aboutus-info h3 {
+    font-size: 2rem;
+    color: #ffd868;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.aboutus-info h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.aboutus-info p {
+    line-height: 2;
+    font-size: 1.3rem;
+}
+
+.aboutus-p {
+    margin-bottom: 1rem;
+}
+
+.aboutus-img {
+    width: 40%;
+    border-radius: 5px;
+    margin: 0 2rem 0 0;
+}
+
+@media screen and (max-width: 1687px) {
+    .aboutus-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutus-info h3 {
+        font-size: 2rem;
+    }
+
+    .aboutus-img {
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1081px) {
+    .aboutus-info h1 {
+        font-size: 2rem;
+    }
+
+    .aboutus-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .aboutus-info p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    .about-aos { 
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem; 
+     } 
+
+    .aboutus-info {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .aboutus-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .aboutus-info h1 {
+        font-size: 2.3rem;
+    }
+
+    .aboutus-info p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .aboutus-img {
+        width: 100%;
+        margin: 1rem auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 321px) {
+    .aboutus-container{
+    height: auto;
+    }
+}
+
+
+@media screen and (max-width: 280px) {
+    .aboutus-info h1 {
+        font-size: 2rem;
+    }
+}
