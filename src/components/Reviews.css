@@ -7,7 +7,7 @@
     align-items: center;
     position: relative;
     color: #fff;
-    background: url('https://st2.depositphotos.com/3283585/12247/v/950/depositphotos_122478664-stock-illustration-pattern-on-the-theme-of.jpg');
+    background: url('../images//review-wallpaper.jpg');
     background-color: rgba(0,0,0,0.9); /* Tint color */
     background-blend-mode: multiply;
     background-position: center;
@@ -89,7 +89,7 @@
 
     .reviews {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, .7fr);
+        grid-template-rows: repeat(3, 1fr);
         row-gap: 1rem;
         justify-items: center;
         margin-bottom: 1rem;
