@@ -59,9 +59,15 @@
     cursor: pointer;
 }
 
+.arrow-container {
+    position: relative;
+}
+
 .main-arrow {
     position: absolute;
-    bottom: 35px;
+    top: 100%;
+    left: 46%;
+    margin-top: 2rem;
     font-size: 2rem;
     animation: arrow 1s infinite ease-in-out;
 }
