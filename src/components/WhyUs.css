@@ -114,16 +114,9 @@
 }
 
 @media screen and (max-width: 540px) {
-    .whyus-content {
-        background-position: bottom 0px left 100px;
-    }
-
     .whyus-title {
         font-size: 3rem;
     }
-}
-
-@media screen and (max-width: 540px) {
     .whyus-content {
         background-position: bottom 0px left 70px;
     }
@@ -136,6 +129,7 @@
 
     .whyus-content {
         background-position: bottom 0px left 60px;
+        margin-bottom: 1rem;
     }
 }
 
