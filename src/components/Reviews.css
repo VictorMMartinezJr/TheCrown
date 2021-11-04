@@ -1,5 +1,5 @@
 .review-container {
-    height: 80vh;
+    height: 60vh;
     background: #000;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,6 @@
     align-items: center;
     position: relative;
     color: #fff;
-    z-index: 2;
     background: url('https://st2.depositphotos.com/3283585/12247/v/950/depositphotos_122478664-stock-illustration-pattern-on-the-theme-of.jpg');
     background-color: rgba(0,0,0,0.9); /* Tint color */
     background-blend-mode: multiply;
@@ -17,7 +16,7 @@
 .review-container::before {
     content: '';
     width: 100%;
-    height:60px;
+    height:20px;
     position: absolute;
     background: linear-gradient(0deg, transparent, #000);
     top: 0;
@@ -26,7 +25,7 @@
 .review-container::after {
     content: '';
     width: 100%;
-    height:60px;
+    height:20px;
     position: absolute;
     background: linear-gradient(180deg, transparent, #000);
     bottom: 0;
@@ -36,7 +35,6 @@
     font-size: 3rem;
     align-self: flex-start;
     margin-left: 2rem;
-    z-index: 2;
 }
 
 .reviews {
@@ -45,7 +43,7 @@
     column-gap: 1rem;
     align-items: center;
     justify-content: space-evenly;
-    height: 70%;
+    height: 80%;
     width: 100%;
     padding: 0 1rem;
     z-index: 2;
@@ -57,7 +55,7 @@
     grid-template-rows: repeat(3, 1fr);
     justify-content: space-evenly;
     align-items: center;
-    height: 60%;
+    height: 80%;
     background: rgb(24, 24, 24);
     padding: 0 1rem;
     position: relative;
@@ -87,8 +85,8 @@
 @media screen and (max-width: 770px) {
     .review-container {
         height: auto;
-        
     }
+
     .reviews {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, .7fr);

@@ -5,7 +5,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+.aboutus-container::after {
+    content: '';
+    width: 100%;
+    height:20px;
+    position: absolute;
+    background: linear-gradient(180deg, transparent, #000);
+    bottom: 0;
+ }
 
 .about-aos {
     display: flex;
@@ -14,7 +24,7 @@
 }
 
 .aboutus-content {
-    height: 50vh;
+    height: 100%;
     width: 80%;
     display: flex;
     position: relative;
@@ -22,9 +32,9 @@
 
 .side-fire {
     position: absolute;
-    height: 100%;
-    left: -100px;
-    top: -100px;
+    height: 500px;
+    left: -50px;
+    top: -150px;
     transform: rotate(90deg);
 }
 
@@ -63,10 +73,13 @@
     position: relative;
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutus-img {
-    height: 100%;
+    height: 450px;
     border-radius: 10px;
     object-fit: contain;
 }
@@ -82,7 +95,7 @@
 
 @media screen and (max-width: 1290px) {
     .aboutus-container {
-        height: 80vh;
+        height: auto;
     }
     .aboutus-content {
         width: 100%;
@@ -98,14 +111,9 @@
         margin: 0 .5rem;
     }
 
-    .aboutus-images {
-        display: flex;
-        align-items: center;
-    }
-
     .aboutus-img {
-        height: 80%;
-        margin-right: .5rem;
+        height: 400px;
+        margin: 2rem 0;
     }
 
     .aboutus-flour {
@@ -116,19 +124,33 @@
         z-index: -1;
         object-fit: contain;
     }
-
-    .side-fire {
-        left: -200px;
-        top: -200px;
-    }
 } 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1025px) {
     .aboutus-content {
         flex-direction: column;
         text-align: center;
     }
+    .aboutus-images {
+        justify-content: center;
+    }
 
+    .aboutus-flour {
+        height: 800px;
+        top: -50px;
+        left: 0px;
+        z-index: -1;
+        object-fit: contain;
+    }
+
+    .side-fire {
+        height: 300px;
+        left: -100px;
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 770px) {
     .aboutus-info h1 {
         font-size: 3rem;
     }
@@ -138,20 +160,8 @@
         padding: 0 1rem;
     }
     
-    .aboutus-images {
-        justify-content: center;
-    }
-    
     .aboutus-img {
         margin-right: 0;
-    }
-
-    .aboutus-flour {
-        height: 600px;
-        top: -40px;
-        left: -50px;
-        z-index: -1;
-        object-fit: contain;
     }
 
     .side-fire {
@@ -161,14 +171,6 @@
 }
 
 @media screen and (max-width: 540px) {
-    .aboutus-container{
-        height: 100vh;
-    }
-
-    .aboutus-content {
-        height: 100vh;
-    }
-
     .aboutus-img {
         height: 300px;
     }
@@ -192,7 +194,6 @@
         width: 100%;
     }
 
-
     .aboutus-img {
         height: 250px;
         margin-top: 1rem;
@@ -211,35 +212,19 @@
 }
 
 @media screen and (max-width: 400px) {
-    .aboutus-container{
-        height: 120vh;
-    }
-
-    .aboutus-content {
-        height: 120vh;
-    }
-
     .aboutus-img {
         height: 230px;
         margin-top: 0;
     }
 
     .aboutus-flour {
-        height: 380px;
-        top: 50px;
+        height: 350px;
+        top: -50px;
         left: -30px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .aboutus-container{
-        height: 150vh;
-    }
-
-    .aboutus-content {
-        height: 150vh;
-    }
-
     .aboutus-flour {
         top: 0px;
     }
@@ -250,13 +235,6 @@
     }
 }
 @media screen and (max-width: 320px) {
-    .aboutus-container{
-        height: 100vh;
-    }
-
-    .aboutus-content {
-        height: 100vh;
-    }
     .aboutus-info h1 {
         font-size: 2rem;
     }

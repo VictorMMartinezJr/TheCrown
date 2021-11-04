@@ -96,6 +96,23 @@
     object-position: center;
 }
 
+@media screen and (max-width: 1290px) {
+    .menu-container {
+        height: auto;
+    }
+    .menu-items {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        width: 100%;
+        margin: 1rem 0;
+        row-gap: 1rem;
+    }
+
+    .menu-item {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 770px ) {
     .menu-container {
         height: auto;
@@ -125,6 +142,7 @@
         height: 400px;
         width: 90%;
     }
+
 
     .menu-leaves {
         top: 10px;
