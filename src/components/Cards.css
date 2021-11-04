@@ -23,11 +23,10 @@
     font-size: 4rem;
     letter-spacing: 3px;
     margin-bottom: 1rem;
-
 }
 
 .card p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0 .5rem;
     margin-bottom: 2rem;
     letter-spacing: 1px;
@@ -53,37 +52,23 @@
 
 .card1 {
     background: url('../images/Pour.jpg');
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0,0,0,0.5); /* Tint color */
-    background-blend-mode: multiply;
 }
 
 .card2 {
     background: url('../images/chef.jpg');
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0,0,0,0.5); /* Tint color */
-    background-blend-mode: multiply;
 }
 
 .card3 {
     background: url('../images/delivery.jpg');
+}
+
+.card1, .card2, .card3 {
     background-position: center;
     background-size: cover;
-    background-color: rgba(0,0,0,0.5); /* Tint color */
+    background-color: rgba(0,0,0,0.7); /* Tint color */
     background-blend-mode: multiply;
 }
 
-@media screen and (max-width: 1415px) {
-    .card h1 {
-        font-size: 2rem;
-    }
-
-    .card button {
-        font-size: 1rem;
-    }
-}
 
 @media screen and (max-width: 965px) {
     .card p {
@@ -104,28 +89,22 @@
     }
 
     .card h1 {
-        font-size: 1.5rem;
-    }
-
-    .card p {
-        font-size: 1rem;
-    }
-
-    .card button {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
-@media screen and (max-width: 280px) {
-    .card {
-        margin: .1rem 0;
+@media screen and (max-width: 540px) {
+    .cards {
+        height: 200vh;
     }
+}
 
+@media screen and (max-width: 320px) {
     .card p {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .card button {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 }

@@ -1,5 +1,5 @@
 import './WhyUs.css';
-import spice from './images/spice.jpg'
+import spice from '../images/spice.jpg'
 
 const WhyUs = () => {
     return (

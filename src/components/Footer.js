@@ -1,8 +1,11 @@
-import './Footer.css'
+import './Footer.css';
+import { useState } from 'react';
 
 const logo = "https://d33wubrfki0l68.cloudfront.net/deafe47e0ea96b853fe7b4131a5674263f601ec2/1d342/assets/img/crown.png";
 
 const Footer = () => {
+    const [email, setEmail] = useState('');
+
     return (
         <section className='footer'>
             <div className='footer-email'>
@@ -10,8 +13,11 @@ const Footer = () => {
                     <img src={logo} alt="logo" />
                     <h2>STAY UPDATED FOR NEWS & OFFERS!</h2>
                     <form className='footer-form'>
-                        <input className='footer-input' type="email" placeholder='Email Address' />
-                        <button className='footer-input'>Submit</button>
+                        <input className='footer-input' value={email} type="email" placeholder='Email Address' onChange={(e) => setEmail(e.target.value)} />
+                        <button className='footer-input footer-btn' onClick={(e) => {
+                            e.preventDefault();
+                            setEmail('')
+                        }}>Submit</button>
                     </form>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import './Reviews.css';
-import fire from './images/fire.png';
-import mint from './images/mint.png';
-import burger from './images/burger.png';
+import fire from '../images/fire.png';
+import mint from '../images/mint.png';
+import burger from '../images/burger.png';
 
 const Reviews = () => {
     return (

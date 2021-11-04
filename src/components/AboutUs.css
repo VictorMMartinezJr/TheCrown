@@ -34,7 +34,6 @@
     display: flex;
     flex-direction: column;
     margin: 2rem;
-    
 }
 
 .aboutus-info h3 {
@@ -81,76 +80,204 @@
     object-fit: contain;
 }
 
-@media screen and (max-width: 1687px) {
-    .aboutus-info h1 {
-        font-size: 2.5rem;
+@media screen and (max-width: 1290px) {
+    .aboutus-container {
+        height: 80vh;
     }
-
-    .aboutus-info h3 {
-        font-size: 2rem;
-    }
-
-    .aboutus-img {
-        max-height: 400px;
-    }
-}
-
-@media screen and (max-width: 1081px) {
-    .aboutus-info h1 {
-        font-size: 2rem;
-    }
-
-    .aboutus-info h3 {
-        font-size: 1.5rem;
-    }
-
-    .aboutus-info p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-}
-
-@media screen and (max-width: 882px) {
-    .about-aos { 
-        flex-direction: column;
+    .aboutus-content {
+        width: 100%;
+        justify-content: center;
         align-items: center;
-        padding: 0 2rem; 
-     } 
+        position: relative;
+    }
 
     .aboutus-info {
         width: 100%;
-        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin: 0 .5rem;
     }
 
-    .aboutus-info h3 {
-        font-size: 1.5rem;
+    .aboutus-images {
+        display: flex;
+        align-items: center;
+    }
+
+    .aboutus-img {
+        height: 80%;
+        margin-right: .5rem;
+    }
+
+    .aboutus-flour {
+        position: absolute;
+        height: 700px;
+        top: -150px;
+        left: 0;
+        z-index: -1;
+        object-fit: contain;
+    }
+
+    .side-fire {
+        left: -200px;
+        top: -200px;
+    }
+} 
+
+@media screen and (max-width: 770px) {
+    .aboutus-content {
+        flex-direction: column;
+        text-align: center;
     }
 
     .aboutus-info h1 {
-        font-size: 2.3rem;
+        font-size: 3rem;
+    }
+
+    .aboutus-info p {
+        font-size: 1.3rem;
+        padding: 0 1rem;
+    }
+    
+    .aboutus-images {
+        justify-content: center;
+    }
+    
+    .aboutus-img {
+        margin-right: 0;
+    }
+
+    .aboutus-flour {
+        height: 600px;
+        top: -40px;
+        left: -50px;
+        z-index: -1;
+        object-fit: contain;
+    }
+
+    .side-fire {
+        left: -280px;
+        top: -210px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .aboutus-container{
+        height: 100vh;
+    }
+
+    .aboutus-content {
+        height: 100vh;
+    }
+
+    .aboutus-img {
+        height: 300px;
+    }
+
+    .aboutus-flour {
+        height: 450px;
+        top: -30px;
+        left: -50px;
+        z-index: -1;
+        object-fit: contain;
+    }
+    .side-fire {
+        left: -170px;
+        top: -50px;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-info p {
+        width: 100%;
+    }
+
+
+    .aboutus-img {
+        height: 250px;
+        margin-top: 1rem;
+    }
+
+    .aboutus-flour {
+        height: 350px;
+        top: -30px;
+        left: -20px;
+    }
+
+    .side-fire {
+        left: -250px;
+        top: -60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .aboutus-container{
+        height: 120vh;
+    }
+
+    .aboutus-content {
+        height: 120vh;
+    }
+
+    .aboutus-img {
+        height: 230px;
+        margin-top: 0;
+    }
+
+    .aboutus-flour {
+        height: 380px;
+        top: 50px;
+        left: -30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .aboutus-container{
+        height: 150vh;
+    }
+
+    .aboutus-content {
+        height: 150vh;
+    }
+
+    .aboutus-flour {
+        top: 0px;
+    }
+
+    .side-fire {
+        left: -280px;
+        top: -70px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .aboutus-container{
+        height: 100vh;
+    }
+
+    .aboutus-content {
+        height: 100vh;
+    }
+    .aboutus-info h1 {
+        font-size: 2rem;
     }
 
     .aboutus-info p {
         font-size: 1rem;
-        line-height: 1.2;
     }
 
     .aboutus-img {
-        width: 100%;
-        margin: 1rem auto;
-        margin-bottom: 1rem;
+        height: 150px;
+        margin-top: 1rem;
     }
-}
 
-@media screen and (min-width: 281px) and (max-width: 321px) {
-    .aboutus-container{
-    height: auto;
+    .side-fire {
+        left: -180px;
+        top: -50px;
     }
-}
 
-
-@media screen and (max-width: 280px) {
-    .aboutus-info h1 {
-        font-size: 2rem;
+    .aboutus-flour {
+        top: -25px;
+        left: -10px;
+        height: 230px;
     }
-}
+} 

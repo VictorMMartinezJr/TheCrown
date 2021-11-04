@@ -12,6 +12,7 @@
     position: absolute;
     background: linear-gradient(0deg, transparent, #000);
     top: 0;
+    z-index: 2;
 }
 
 .aos {
@@ -68,47 +69,41 @@
     font-size: 1.5rem;
 }
 
+.footer-btn {
+    transition: transform .2s ease-in-out;
+}
+
 .footer-btn:hover, .footer-btn:active {
     transform: scale(1.1);
     cursor: pointer;
+    transition: transform .2s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .aos img {
         height: 3rem;
     }
 
     .aos h2 {
-        font-size: 1.2rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .aos h2 {
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+
+    .footer-input {
+        padding: .4rem 2rem .4rem 1rem;
     }
 }
 
 @media screen and (max-width: 500px) {
     .aos h2 {
-        letter-spacing: 2px;
-    }
-
-    .footer-input {
-        padding: .4rem 2rem .4rem 1rem;
-    }
-
-    .footer-btn {
-        padding: .4rem 2rem .4rem 1rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .aos h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0px;
-    }
-
-    .footer-input {
-        padding: .4rem 2rem .4rem 1rem;
-    }
-
-    .footer-btn {
-        padding: .4rem 2rem .4rem 1rem;
     }
 }
 
@@ -242,5 +237,15 @@
 @media screen and (max-width: 400px) {
     .footer-info {
         height: 80vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer-input {
+        font-size: 1rem;
+    }
+
+    .aos h2 {
+        text-align: center;
     }
 }
