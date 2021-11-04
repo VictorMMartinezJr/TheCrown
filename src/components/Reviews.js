@@ -6,7 +6,6 @@ import burger from '../images/burger.png';
 const Reviews = () => {
     return (
         <section className='review-container'>
-            <div className="background-image"></div>
             <h1 data-aos='fade-up'>What people say about us</h1>
             <div className='reviews' data-aos='fade-up'>
                 <div className='review'>
