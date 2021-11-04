@@ -7,10 +7,11 @@
     align-items: center;
     position: relative;
     color: #fff;
-    background: url('../images//review-wallpaper.jpg');
+    background: url('../images/review-wallpaper.jpg');
+    background-position: top;
+    background-size: cover;
     background-color: rgba(0,0,0,0.9); /* Tint color */
     background-blend-mode: multiply;
-    background-position: center;
 }
 
 .review-container::before {
