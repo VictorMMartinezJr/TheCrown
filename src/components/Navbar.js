@@ -15,8 +15,8 @@ const Navbar = () => {
             <img onClick={() => window.scroll(0, 0)} src="https://d33wubrfki0l68.cloudfront.net/deafe47e0ea96b853fe7b4131a5674263f601ec2/1d342/assets/img/crown.png" alt="logo" />
             <ul className={isNavOpen ? 'navbar-links active' : 'navbar-links'}>
                 <li className='navbar-link'><a href='/'>Home</a></li>
-                <li className='navbar-link'><a href='#menu' onClick={() => setIsNavOpen(false)}>Menu</a></li>
                 <li className='navbar-link'><a href='#about' onClick={() => setIsNavOpen(false)}>About us</a></li>
+                <li className='navbar-link'><a href='#menu' onClick={() => setIsNavOpen(false)}>Menu</a></li>
             </ul>
             <div className='burger' onClick={burgerClicked}>
                 <div className={isNavOpen ? 'toggle line1' : 'line1'}></div>

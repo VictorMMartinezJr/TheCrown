@@ -5,6 +5,16 @@
     background-size: cover;
     background-color: rgba(0,0,0,0.7); /* Tint color */
     background-blend-mode: multiply;
+    position: relative;
+}
+
+.main-container::after {
+    content: '';
+    width: 100%;
+    height:60px;
+    position: absolute;
+    background: linear-gradient(180deg, transparent, #000);
+    bottom: 0;
 }
 
 .main-content {
@@ -15,6 +25,7 @@
     justify-content: center;
     height: 92vh;
     text-align: center;
+    position: relative;
 }
 
 .main-title {
@@ -46,6 +57,23 @@
 .main-btn:hover, .main-btn:active {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.main-arrow {
+    position: absolute;
+    bottom: 35px;
+    font-size: 2rem;
+    animation: arrow 1s infinite ease-in-out;
+}
+
+@keyframes arrow {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {

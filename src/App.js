@@ -8,6 +8,7 @@ import Cards from './components/Cards';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
+import WhyUs from './components/WhyUs';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Main />
       <Cards />
       <AboutUs />
+      <WhyUs />
       <Menu />
       <Reviews />
       <Footer />

@@ -2,6 +2,7 @@
     height: 100vh;
     background-color: black;
     color: #fff;
+    position: relative;
 }
 
 .menu-items {

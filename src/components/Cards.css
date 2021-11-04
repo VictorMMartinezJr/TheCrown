@@ -16,6 +16,7 @@
     width: 30%;
     margin: 2rem 2rem;
     text-align: center;
+    border-radius: 10px;
 }
 
 .card h1 {

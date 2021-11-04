@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
 import './Main.css';
 
-
 const Main = () => {
 
     return (
@@ -14,6 +13,7 @@ const Main = () => {
                     </p>
                     <button className='main-btn'>Order Online</button>
                 </div>
+                <i className="fas fa-long-arrow-alt-down main-arrow"></i>
             </div>
         </section>
     )

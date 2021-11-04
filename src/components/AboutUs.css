@@ -4,12 +4,28 @@
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .about-aos {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.aboutus-content {
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    position: relative;
+}
+
+.side-fire {
+    position: absolute;
+    height: 100%;
+    left: -100px;
+    top: -100px;
+    transform: rotate(90deg);
 }
 
 .aboutus-info {
@@ -31,24 +47,38 @@
 
 .aboutus-info h1 {
     font-size: 4rem;
-    text-transform: uppercase;
     margin-bottom: 1rem;
     letter-spacing: 1px;
 }
 
 .aboutus-info p {
     line-height: 2;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .aboutus-p {
     margin-bottom: 1rem;
 }
 
+.aboutus-images {
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
 .aboutus-img {
-    width: 40%;
-    border-radius: 5px;
-    margin: 0 2rem 0 0;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.aboutus-flour {
+    position: absolute;
+    height: 800px;
+    top: -150px;
+    left: 5%;
+    z-index: -1;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 1687px) {
