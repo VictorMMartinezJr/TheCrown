@@ -11,7 +11,7 @@ const AboutUs = () => {
                 <div className="aboutus-content">
                     <div className='aboutus-info' >
                         <h1>About Us</h1>
-                        <p className='aboutus-p'>The Smoking Grill's mission is to give our customers a place to celebrate life’s special moments by offering the best food, service, and ambiance. The smile on our customers face has always been our first priority and we work hard to achieve that. </p>
+                        <p className='aboutus-p'>Crown's mission is to give our customers a place to celebrate life’s special moments by offering the best food, service, and ambiance. The smile on our customers face has always been our first priority and we work hard to achieve that. </p>
                         <p>Established in 1982, We aim to keep going forever and bring happiness to your life.</p>
                     </div>
                     <div className='aboutus-images'>
