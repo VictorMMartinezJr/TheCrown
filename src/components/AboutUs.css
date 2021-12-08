@@ -1,11 +1,12 @@
 .aboutus-container {
-    height: 100vh;
+    min-height: 100vh;
     background: #000;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .aboutus-container::after {
@@ -27,6 +28,7 @@
     height: 100%;
     width: 80%;
     display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -61,7 +63,7 @@
 }
 
 .aboutus-info p {
-    line-height: 2;
+    line-height: 1.7;
     font-size: 1.5rem;
 }
 
@@ -124,13 +126,28 @@
         z-index: -1;
         object-fit: contain;
     }
+
+    .side-fire {
+        left: -200px;
+        top: -200px;
+    }
+    
 } 
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
     .aboutus-content {
         flex-direction: column;
         text-align: center;
     }
+
+    .aboutus-info h1 {
+        margin: 1rem 0;
+    }
+
+    .aboutus-info p {
+        margin-top: 1rem;
+    }
+    
     .aboutus-images {
         justify-content: center;
     }
@@ -144,13 +161,17 @@
     }
 
     .side-fire {
-        height: 300px;
-        left: -100px;
-        top: 150px;
+        top: -80px;
+        left: -250px;
+    }
+
+    .aboutus-img {
+        height: 500px;
+        margin: 2rem 0;
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
     .aboutus-info h1 {
         font-size: 3rem;
     }
@@ -162,11 +183,6 @@
     
     .aboutus-img {
         margin-right: 0;
-    }
-
-    .side-fire {
-        left: -280px;
-        top: -210px;
     }
 }
 
@@ -206,8 +222,8 @@
     }
 
     .side-fire {
-        left: -250px;
-        top: -60px;
+        left: -200px;
+        top: 0;
     }
 }
 
@@ -228,11 +244,6 @@
     .aboutus-flour {
         top: 0px;
     }
-
-    .side-fire {
-        left: -280px;
-        top: -70px;
-    }
 }
 @media screen and (max-width: 320px) {
     .aboutus-info h1 {
@@ -249,8 +260,7 @@
     }
 
     .side-fire {
-        left: -180px;
-        top: -50px;
+        left: -150px;
     }
 
     .aboutus-flour {
