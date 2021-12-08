@@ -25,7 +25,7 @@
 }
 
 .footer-email {
-    background: url('../images/footer.jpg');
+    background: url('../../assets/footer.jpg');
     background-position: center;
     background-size: cover;
     background-color: rgba(0,0,0,0.7); /* Tint color */

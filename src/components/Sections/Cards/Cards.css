@@ -51,15 +51,15 @@
 }
 
 .card1 {
-    background: url('../images/Pour.jpg');
+    background: url('../../assets/Pour.jpg');
 }
 
 .card2 {
-    background: url('../images/chef.jpg');
+    background: url('../../assets/chef.jpg');
 }
 
 .card3 {
-    background: url('../images/delivery.jpg');
+    background: url('../../assets/delivery.jpg');
 }
 
 .card1, .card2, .card3 {

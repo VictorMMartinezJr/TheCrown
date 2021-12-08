@@ -1,6 +1,6 @@
 .main-container {
     height: 100vh;
-    background: url('../images/restaurant.jpg');
+    background: url('../../assets/restaurant.jpg');
     background-position: top;
     background-size: cover;
     background-color: rgba(0,0,0,0.7); /* Tint color */

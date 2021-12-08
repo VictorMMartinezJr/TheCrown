@@ -1,14 +1,14 @@
 import './App.css'
-import Main from './components/Main';
-import AboutUs from './components/AboutUs';
+import Main from './components/Sections/Main';
+import AboutUs from './components/Sections/AboutUs/AboutUs';
+import { useEffect } from 'react';
+import Cards from './components/Sections/Cards/Cards';
+import Reviews from './components/Sections/Reviews/Reviews';
+import Footer from './components/Sections/Footer/Footer';
+import Menu from './components/Sections/Menu/Menu';
+import WhyUs from './components/Sections/WhyUs/WhyUs';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import { useEffect } from 'react';
-import Cards from './components/Cards';
-import Reviews from './components/Reviews';
-import Footer from './components/Footer';
-import Menu from './components/Menu';
-import WhyUs from './components/WhyUs';
 
 
 function App() {

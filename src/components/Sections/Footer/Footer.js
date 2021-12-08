@@ -45,7 +45,7 @@ const Footer = () => {
             <div className='footer-copyright'>
                 <span>
                     <i className="far fa-copyright"></i>
-                    <p>2021 Victor Martinez Jr</p>
+                    <p>2021 VictorMtzCodes</p>
                 </span>
             </div>
         </section>

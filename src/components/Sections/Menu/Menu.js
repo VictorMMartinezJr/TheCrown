@@ -1,11 +1,11 @@
 import './Menu.css';
-import leaves from '../images/leaves.png'
-import menuBurger from '../images/menu-burger.jpg';
-import cheeseStick from '../images/cheese-sticks.jpg';
-import meats from '../images/meats.jpg';
-import dessert from '../images/dessert.jpg';
-import beer from '../images/beer.jpg';
-import soda from '../images/soda.jpg';
+import leaves from '../../assets/leaves.png'
+import menuBurger from '../../assets/menu-burger.jpg';
+import cheeseStick from '../../assets/cheese-sticks.jpg';
+import meats from '../../assets/meats.jpg';
+import dessert from '../../assets/dessert.jpg';
+import beer from '../../assets/beer.jpg';
+import soda from '../../assets/soda.jpg';
 
 const Menu = () => {
     return (
