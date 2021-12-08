@@ -1,5 +1,5 @@
 import './Navbar.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 
 
